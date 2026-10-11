@@ -1,0 +1,17 @@
+#imagen{
+padding-left:97%;
+}
+
+#btn{
+border-radius: 1em;
+box-shadow: 5px 5px 5px #85c226;
+float: right;
+line-height:30px;
+text-align: center;
+height: 30px;
+width: 130px;
+margin: 10px;
+color: #fafdf4;
+background:-moz-radial-gradient(51% 13% 314deg, #85c226, #b5e270  90%);
+background:-webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#b5e270), to(#b5e270));
+}

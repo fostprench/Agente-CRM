@@ -1,0 +1,37 @@
+﻿<style>
+
+</style>
+	<h3 class="titulo text-center">COMPUTADORAS DE ESCRITORIO</h3>
+			<span class="alex"></span><br/>			
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 text-justify">
+						En Siscomp ensamblamos tu PC de acuerdo a tus necesidades en donde los componentes son de buena calidad, con tecnolog&iacute;as actuales y compatibles entre s&iacute;; adem&aacute;s de ofrecer un desempe&ntilde;o excelente garantizando una duraci&oacute;n aceptable. <br/><br/>
+						El cliente escoge su gabinete (Case) de mejor preferencia, contamos con gabinetes convencionales y de tama&ntilde;o reducido (mini-Case) desde el m&aacute;s sencillo hasta el m&aacute;s llamativo. Te asesoramos para que elijas el mejor equipo seg&uacute;n sean tus posibilidades econ&oacute;micas.
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<img src="images/pcs.jpg" class="img-responsive"/>
+					</div>
+				</div> 
+				  
+				<h3 class="noticia text-uppercase text-center"><span>NUESTROS PRODUCTOS</span></h3>
+				
+				
+					<?php $cont=0; foreach($productos as $key=>$val) { ?>
+					   <?php if($cont==0) { ?>	<div class="row">   <?php } ?>	
+					   
+							 <div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<img class="img-responsive" alt="descripcion" src="web/images/upload/<?PHP echo $val['foto']; ?>">
+								  <div class="caption">
+									<h5 class="title text-uppercase text-center"><?PHP echo $val['descripcion']; ?></h5>
+									<p class="descripcion acortar"><span><?PHP echo $val['informacion']; ?></span></p>
+									<p> <span class="label label-primary"><?PHP echo 'STOCK: '.$val['stock']; ?></span> </p>
+									<p class="text-center"><a href="javascript:_verProducto(<?php echo $val['id'];  ?>,'PCS')" class="btn btn-xs btn-default" role="button">VER <span class="badge">+</span></a> 
+								 </div>
+								</div>
+							</div>
+							
+						<?php $cont++; if($cont==3) { ?>	</div>   <?php $cont=0;  } ?>	
+					<?php } ?>
+

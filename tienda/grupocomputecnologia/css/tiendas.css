@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+#navigation-panel {
+	/*margin:0 1.6667em 1.6667em 1.6667em;*/
+	overflow:hidden;
+}
+
+
+	#main-image-box {
+		margin:0;
+		width:100%;
+		height:455px;
+		position:relative;
+		margin-bottom:20px;
+		z-index:1;
+	}
+		/* container_2 Styles */
+		#main-image-box .container_2 {
+			display:none;
+		}
+			#main-image-box .container_2 h1 {
+				font-family:Georgia, "Times New Roman", Times, serif;
+				font-style:italic;
+				color:#000;
+				font-size:26px;
+				border:none;
+				margin-bottom:5px;
+			}
+				#main-image-box .container_2 h1 span {
+					font-size:20px;
+				}
+				
+			#main-image-box .container_2 h2 {
+				color:#000;
+				font-family:Arial, Helvetica, sans-serif;
+				font-style:normal;
+				margin-bottom:5px;
+			}
+				#main-image-box .container_2 h2 * {
+					font-size:16px;
+				}
+				
+			#main-image-box .container_2 h2 span.black,
+			#main-image-box .container_2 h2 span.red {
+				padding:1px 3px;
+				color:#fff;
+			}
+			#main-image-box .container_2 h2 span.black {
+				background-color:black;
+			}
+			#main-image-box .container_2 h2 span.red {
+				background-color:red;
+			}
+			#main-image-box .container_2 a {
+				font-weight:bold;
+				font-style:italic;
+				color:#000;
+			}
+
+		#main-image-box #chiclayo {
+			background-image:url("../images/Chiclayo.jpg");
+			clip:rect(0px 232px 455px 0px);
+		}
+			#main-image-box #chiclayo .container_2 {
+				margin:350px 0 0 53px;
+			} 
+				#main-image-box #chiclayo .container_2 h1 {
+					color:#fff;
+				}
+
+		#main-image-box #nueva {
+			background-image:url("../images/Nueva.jpg");
+			clip:rect(0px 465px 455px 232px);
+		}
+			#main-image-box #nueva .container_2 {
+				margin:350px 0 0 53px;
+			}
+				#main-image-box #nueva .container_2 h1 {
+					color:#fff;
+				}
+
+		#main-image-box #moyobamba {
+			background-image:url("../images/Moyobamba.jpg");
+			clip:rect(0px 697px 455px 465px);
+		}
+			#main-image-box #moyobamba .container_2 {
+				margin:350px 0 0 53px;
+			}
+				#main-image-box #moyobamba .container_2 h1 {
+					color:#fff;
+				}
+		
+			
+		#main-image-box .clip {
+			width:100%;
+			height:455px;
+			position:absolute;
+			top:0;
+			left:0;
+			display:block;
+			background-color:#fff;
+			background-position:center top;
+			background-repeat:no-repeat;
+			z-index:1;
+		}
+		#main-image-box .facets:hover {
+			clip:rect(0px 70px 455px 0px) !important;
+		}
+		#main-image-box .facets:hover .container_2 {
+			display:block;
+		}
+		#main-image-box .facets:hover {
+			z-index:10 !important;
+		}

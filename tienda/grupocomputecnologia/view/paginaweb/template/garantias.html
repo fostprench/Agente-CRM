@@ -1,0 +1,179 @@
+﻿<script language="JavaScript">
+$(document).ready(function(){
+	$("#nombre").change(function(){
+		$("#nombre option:selected").each(function(){
+			elegido = $(this).val();
+			$.get("view/paginaweb/select_garantia.php",{opcion:elegido},function(data){
+				$("#contenido_seleccionado").html(data);
+			});
+		});
+	});
+});
+
+</script>
+
+
+	<h3 class="titulo text-center">GARANT&Iacute;AS</h3>
+			<span class="alex"></span><br/>			
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 text-justify">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td><div class="itemw"> Garant&iacute;a de productos </div></td>
+								</tr>
+								<tr>
+									<td><div class="itemw"> Anulaci&oacute;n de Garant&iacute;a </div></td>
+								</tr>
+								<tr>
+									<td><div class="itemw"> La Garant&iacute;a no cubre </div></td>
+								</tr>
+								<tr>
+									<td><div class="itemw"> Tramitaci&oacute;n de Garant&iacute;a</div></td>
+								</tr>
+								<tr>
+									<td><div class="itemw"> Documentos aclaratorios sobre productos particulares </div></td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<p class='text-center'><b>GARANT&Iacute;AS DE PRODUCTOS</b></p><br/>
+						
+						<b>Servicios de la Garant&iacute;a en Siscomp</b><br>
+						Siscomp, empresa con m&aacute;s de 12 a&ntilde;os en la comercializaci&oacute;n de equipos inform&aacute;ticos en el Norte y Oriente del Per&uacute; le ofrece servicios integrales que incluyen a nuestro soporte de garant&iacute;a.  Ofrecemos soluciones que le ayudan a realizar sus objetivos orientados a la eficiencia en los costos, la mejora en los niveles de servicio, la productividad y satisfacci&oacute;n del usuario final dondequiera que est&eacute;. Si  usted compro un equipo en la costa y quiere recibir soporte en la selva lo puede hacer solo con presentar su comprobante original de compra o la carta de garant&iacute;a del producto.<br>
+						Las mejoras a la garant&iacute;a le permiten ajustar los tiempos de respuesta y nivel de servicio a sus necesidades de soporte. Los beneficios del servicio de soporte  Siscomp se traducen en ajustar la duraci&oacute;n de la vida 6uacute;til esperado de sus PCs, minimizar gastos operativos y de mantenimiento e Incrementar el tiempo de actividad y productividad para usted o su empresa, niveles de servicio coherentes con la comodidad de contar con soporte local.<br>
+						Siscomp  garantiza seg&uacute;n las leyes vigentes y las siguientes condiciones todos los equipos inform&aacute;ticos, componentes y dem&aacute;s productos que distribuye.
+						<br><br>
+
+						<b>Garant&iacute;a De Un A&ntilde;o M&iacute;nimo Desde La Entrega En Todos Los Productos </b><br/>
+						Para reclamar por la falta de conformidad del producto, el consumidor puede dirigirse tanto al vendedor como al fabricante del producto. La ley establece un plazo general de 01 a&ntilde;o desde la adquisici&oacute;n para que se manifieste el problema.<br>
+						Si el defecto sale a la luz durante los primeros 6 meses desde la entrega del bien, se presume que la anomal&iacute;a ya exist&iacute;a cuando lo compr&oacute; y el consumidor no tiene que probar nada.<br>
+						Sin embargo, cuando la falta de conformidad se manifiesta con posterioridad a los 6 meses y en casos dudosos, el fabricante podr&iacute;a exigir un informe pericial independiente para tramitar la garant&iacute;a. En casos obvios de mal funcionamiento o funcionamiento irregular en per&iacute;odo de garant&iacute;a no hay ning&uacute;n tipo de problema.<br>
+						En cualquier caso, durante el tiempo que el consumidor se vea privado del producto se suspende el c&oacute;mputo del plazo de la garant&iacute;a; por ejemplo, si la reparaci&oacute;n de un objeto dura 15 d&iacute;as, el plazo de garant&iacute;a terminar&aacute; 15 d&iacute;as despu&eacute;s de lo originalmente previsto.<br>
+						Todo aquel fabricante que disponga de una garant&iacute;a mayor a  01 a&ntilde;o, se deber&aacute; tramitar directamente con el fabricante no siendo responsabilidad de tales supuestos las tiendas Siscomp.<br/><br/>
+						<b>Condiciones para Clientes, empresas y distribuidores:</b> Los gastos de env&iacute;o hacia nuestras instalaciones siempre ser&aacute;n a cargo del cliente, ya que la ley sobre bienes de consumo no regula la compra-venta entre empresas. Adem&aacute;s, la garant&iacute;a en estos casos ser&aacute; la que estipule el fabricante del producto.
+						<br/><br/>
+
+						<b>&#191; Cu&aacute;ndo El Consumidor Puede Reclamar?</b><br>
+						El consumidor podr&aacute; reclamar si:<br/>
+						<table class="table">
+						<tbody>
+						<tr>
+							<td><img src="images/vineta.gif" style="padding-left:15px;"/></td>
+							<td>El bien adquirido no se ajusta a la descripci&oacute;n realizada por el vendedor.</td>
+						</tr>
+						<tr>
+							<td><img src="images/vineta.gif" style="padding-left:15px;"/></td>
+							<td>El bien adquirido no sirve para los usos a que ordinariamente se destinan los bienes de consumo del mismo tipo.</td>
+						</tr>
+						<tr>
+							<td><img src="images/vineta.gif" style="padding-left:15px;"/></td>
+							<td>No es apto para el uso especial que hubiese sido requerido por el consumidor y que el vendedor haya aceptado.</td>
+						</tr>
+						<tr>
+							<td><img src="images/vineta.gif" style="padding-left:15px;"/></td>
+							<td>No presenta la calidad y el comportamiento esperados, especialmente teniendo en cuenta las declaraciones p&uacute;blicas (publicidad, folletos, etiquetado...) sobre sus caracter&iacute;sticas concretas hechas por el vendedor o el fabricante.</td>
+						</tr>
+						</tbody>
+						</table>
+						<br/>
+
+						<b>&#191;Qu&eacute; Hacer Si El Producto Es Defectuoso?</b>	<br/>
+						
+						<table class="table">
+							<tbody>
+								<tr>
+									<td><div class="itemw">
+										<b>Reparar o sustituir:</b> Lo primero que hay que hacer es mandar el producto a reparar o sustituirlo por uno nuevo. La elecci&oacute;n recae en el vendedor,
+										que decidir&aacute; en funci&oacute;n de los gastos que le genere cada opci&oacute;n: si una de ellas es desproporcionada frente a la otra, el vendedor podr&aacute; elegir la m&aacute;s conveniente a sus intereses, siempre que al consumidor tampoco le suponga mayores inconvenientes.<br>
+										<b>NOTA:</b> Actualmente hay multitud de fabricantes que para dar un servicio postventa de calidad gestionan las aver&iacute;as/defectos/incidencias producidas de sus productos, sin ning&uacute;n coste ni inconveniente para el cliente. En estos casos Siscomp siempre indicar&aacute; las instrucciones de c&oacute;mo se debe tramitar para facilitar la gesti&oacute;n.<br>
+										No se pueden sustituir los bienes fungibles (que se consumen con el uso) ni los de segunda mano. Tanto la reparaci&oacute;n como la sustituci&oacute;n deben realizarse en un plazo de tiempo razonable y de manera totalmente gratuita para el consumidor. <br><br>
+									</div></td>
+								</tr>
+								<tr>
+									<td><div class="itemw">
+										<b>Reducci&oacute;n del precio o resoluci&oacute;n del contrato:</b> Cuando no sea posible (o razonable) sustituir el producto por uno nuevo, cuando la reparaci&oacute;n
+										o la sustituci&oacute;n no sirvan para dejar el producto en condiciones de conformidad, cuando el plazo de tiempo sea exagerado... el consumidor podr&aacute; decidir entre pedir una reducci&oacute;n del precio o resolver el contrato (siempre y cuando la falta de conformidad sea importante). 
+										Adem&aacute;s, el consumidor tiene derecho a que le indemnicen por los da&ntilde;os y perjuicios.
+									</div></td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<br/>
+
+						<p class="text-center"><b>ANULACI&Oacute;N DE GARANTIAS</b></p><br/>
+						<table class="table">
+						<tbody>
+						<tr>
+							<td><div class="itemw">Incorrecta utilizaci&oacute;n, manipulaci&oacute;n o mantenimiento por parte del Cliente de un equipo, kit multimedia, componente o perif&eacute;rico.</div></td>
+						</tr>
+						<tr>
+							<td><div class="itemw">Problemas de software y/o virus</div></td>
+						</tr>
+						<tr>
+							<td><div class="itemw">Componentes quemados por sobretensiones o sobreintensidades el&eacute;ctricas.</div></td>
+						</tr>
+						<tr>
+							<td><div class="itemw">Componentes rotos o da&ntilde;ados sometidos a impacto.</div></td>
+						</tr>
+						<tr>
+							<td><div class="itemw">Incorrecta reparaci&oacute;n, modificaci&oacute;n o ampliaci&oacute;n por parte del cliente de un equipo.</div></td>
+						</tr>
+						<tr>
+							<td><div class="itemw">Deterioro, eliminaci&oacute;n u ocultaci&oacute;n, por parte del cliente, de la etiqueta de garant&iacute;a de Siscomp o del fabricante de todos los productos (incluidos los que forman parte de un equipo, kit multimedia o semiequipo) fabricados o distribuidos por Siscomp. Es decir, no se aceptar&aacute; ning&uacute;n material da&ntilde;ado, sin embalaje o con muestras evidentes de una manipulaci6oacute;n incorrecta.</div></td>
+						</tr>
+						</tbody>
+						</table>
+						
+						<br/>
+						
+						<p class="text-center"><b>LA GARANT&Iacute;A NO CUBRE</b></p><BR>
+						Quedan excluidos de toda garant&iacute;a los defectos y deterioros producidos por hechos externos, accidentes, principalmente accidentes el&eacute;ctricos, por desgaste y por utilizaci&oacute;n no conforme a las instrucciones de Siscomp.<br>
+						Se excluyen igualmente los productos modificados o reparados por el Cliente o cualquier otra persona no autorizada por Siscomp, as&iacute; como los productos que son objeto de un contrato de soporte espec&iacute;fico. <br>
+						Siscomp no se responsabiliza de la informaci&oacute;n personal que contenga el PC o unidad de almacenamiento. El Cliente se responsabiliza de los datos o informaci&oacute;n en el material a reparar y de realizar las pertinentes copias de seguridad.<br>
+						Incorrecta configuraci&oacute;n software/hardware, por parte del Cliente, de un equipo, componente o perif&eacute;rico. Incorrecta configuraci&oacute;n software/hardware o aver&iacute;a en un equipo provocada por un componente no suministrado por Siscomp e incorporado por el Cliente.<br> 
+						Infecci&oacute;n de virus inform&aacute;ticos, por parte del Cliente, en equipos, discos duros, memorias USB o de software adicional.<br>
+						 La reparaci&oacute;n de los casos anteriores ser&aacute;n facturados de acuerdo a la complejidad de la reparaci&oacute;n del mismo.<br>
+						 <b>Los soportes &oacute;pticos (CD,DVD, BLUERAY) no tienen garant&iacute;a una vez que el embalaje o caja est&aacute; abierta o desprecintada.</b>Solamente se podr&aacute;n devolver aquellos soportes &oacute;pticos cuyos embalaje o envase no haya sido abierto, pagando los portes el cliente.
+						
+						<br/><br/>
+						
+						<p class="text-center"><b>TRAMITACI&Oacute;N DE LA GARANT&Iacute;A </b></p><br/>
+						Existen ciertos fabricantes que para facilitar al cliente la tramitaci&oacute;n de sus productos en garant&iacute;a facilitan un n&uacute;mero de tel&eacute;fono al que llamar para solicitar la garant&iacute;a del CAS (<b>Centro Autorizado de Servicio</b>) del fabricante. En este caso el cliente deber&aacute; de llevar o enviar el producto averiado directamente al CAS del fabricante, generalmente sin ning&uacute;n coste para el cliente.<br><br>
+						Aqu&iacute; tiene un listado de fabricantes, donde le indicar&aacute; la forma de proceder:<br/><br/>
+
+						<table class='table' border="1">
+						<tbody>
+						<tr>
+							<td><b>Fabricante</b></td>
+							<td>
+							<select id="nombre" name="nombre" class="form-control">
+								<option value="1">HP</option>
+								<option value="2">Lenovo</option>
+								<option value="3">Sony</option>
+								<option value="4">Epson</option>
+								<option value="5">Cannon</option>
+								<option value="6">Creative</option>
+								<option value="7">Dell</option>
+								<option value="8">LG</option>
+								<option value="9">Sansung</option>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Proceso de tramitaci&oacute;n: </td>
+							<td >
+							<div  id="contenido_seleccionado">
+							HP tramita todos sus art&iacute;culos ya sean defectuosos o averiados directamente con el cliente final y sin coste alguno, durante el primer a&ntilde;o de garant&iacute;a fabricante. HP &uacute;nicamente ofrece 1 a&ntilde;o de garant&iacute;a fabricante. A partir del 2do a&ntilde;o de garant&iacute;a, (garant&iacute;a comercial) el producto HP se gestiona a trav&eacute;s de Siscomp , queda por parte del cliente demostrar que el defecto o vicio oculto, se encuentar en su producto desde el momento de compra y que la aver&iacute;a o fallo no es por uso o desgaste, tal y como esta indicado en nuestra Ley de Garant&iacute;as. En caso que no sea posible demostrar este hecho por el cliente, no ser&aacute; aplicable la garant&iacute;a comercial y Siscomp no podr&aacute; gestionar la garant&iacute;a del producto.<br>
+							A tener tambi&eacute;n en cuenta, que bater&iacute;as, y accesorios &uacute;nicamente poseen entre 6 meses a 1 a&ntilde;o de garant&iacute;a (seg&uacute;n modelo) por estar considerados como consumibles y/o accesorios, y estar sometidos a desgastes por el uso y su naturaleza. Consulte el certificado de garant&iacute;a que acompa&ntilde;a a su producto para informaci&oacute;n adicional.<br>
+							Tel&eacute;fono: 080010111 llamada gratuita.
+							</div>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+
+					</div>
+				</div> 

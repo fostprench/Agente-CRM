@@ -1,0 +1,147 @@
+﻿<style>
+.texto{
+    font: normal 12px/1.5  Arial, sans-serif; 
+    font-size: 12px;
+	margin:0;
+	padding:0;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.h12{
+margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+</style>
+
+<h3 class="titulo text-center">NUESTRAS TIENDAS</h3>
+<span class="alex"></span><br/>
+
+<div class="row cuerpo">
+	<div class="col-xs-12 col-sm-12 col-md-12">
+						
+							<div class="col-sm-4">
+							  <div class="panel panel-primary">
+								<div class="panel-heading">
+								  <h3 class="panel-title">Filial Moyobamba</h3>
+								</div>
+								<div class="panel-body">
+								  Ubiquenos en Jr. Serafin Filomeno #296 Frente a la Empresa Transportes Cajamarca.</br>
+								  Telefax 042-509751 RPM *659405 942839302
+								</div>
+							  </div>
+							</div>	
+							
+							<div class="col-sm-4">
+							  <div class="panel panel-primary">
+								<div class="panel-heading">
+								  <h3 class="panel-title">Filial Nueva Cajamarca</h3>
+								</div>
+								<div class="panel-body">
+								  Ubiquenos en Av. Cajamarca Sur #754<br/>
+								  Telf. 042-556793 RPM *659404 942839301
+								</div>
+							  </div>
+							</div>
+							
+							<div class="col-sm-4">
+							  <div class="panel panel-primary">
+								<div class="panel-heading">
+								  <h3 class="panel-title">Filial Chiclayo</h3>
+								</div>
+								<div class="panel-body">
+								  Ubiquenos en Av. San José #607 y Jr. Juan Cuglievan 828  <br/> Telefax 74-237424
+								  Telf. 74-600080, 74-600081 Nextel 607*672.
+								</div>
+							  </div>
+							</div>
+							
+	</div>
+</div>
+  
+
+
+<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery.clip.js"></script>
+	<script type="text/javascript" src="js/jquery.facets.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#main-image-box').children().removeClass('facets').end().facets({
+		control: 'ul#mainlevel',
+		clipSpacing: 1,
+		animationSpeed: 400,
+		activePanel: true,
+		beforeMax: function(index) {
+			$('#main-image-box .clip:eq('+index+') .container_2').show();
+		},
+		beforeMin: function(index) {
+			$('#main-image-box .clip:eq('+index+') .container_2').hide();
+		}
+	});
+});
+</script>
+
+
+			<div class="row">
+				
+				
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="col-xs-12 col-sm-12 col-md-1"></div>
+					<div class="col-xs-12 col-sm-12 col-md-10">
+						<div id="navigation-panel">
+							<div id="main-image-box">
+								<div class="clip facets" id="chiclayo">
+									<div class="container_2"><h1 class="h12"><span>Filial</span> Chiclayo</h1><h2 class="h12"><span class="red">Av. San José #607</span></h2></div>
+								</div>
+								<div class="clip facets" id="nueva">
+									<div class="container_2"><h1 class="h12"><span>Filial</span> Nueva Cajamarca</h1><h2 class="h12"><span class="red">Av. Cajamarca Sur #754</span></h2></div>
+								</div>
+								<div class="clip facets" id="moyobamba">
+									<div class="container_2"><h1 class="h12"><span>Filial</span> Moyobamba</h1><h2 class="h12"><span class="red">Jr. Serafin Filomeno #296</span></h2></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-1"></div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					 <ul id="mainlevel">
+                        <li><a href="#">Chiclayo<!--[if gte IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                        </li>
+                    </ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					 <ul id="mainlevel">
+                        
+                        <li><a href="#">Nueva Cajamarca<!--[if gte IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                        </li>
+                    </ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					 <ul id="mainlevel">
+                        
+                        <li><a href="#">Moyobamba<!--[if gte IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                        </li>
+                    </ul>
+				</div>
+				</div>
+			</div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+           
+        
+    
+    
+
+
+

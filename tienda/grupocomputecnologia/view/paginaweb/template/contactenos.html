@@ -1,0 +1,112 @@
+<script type="text/javascript" src="js/required.js"></script>
+<script>
+var item = 0;
+var j=0;
+$(document).ready(function(){
+
+$('#enviar_msg').click(function(){
+
+valores = true;
+valores = valores && $("#nombre" ).required();
+valores = valores && $("#email" ).required();
+valores = valores && $("#asunto" ).required();
+valores = valores && $("#mensaje" ).required();
+
+if(valores){
+
+campo_nombre = $("#nombre").val();
+campo_email = $("#email").val();
+campo_asunto = $("#asunto").val();
+campo_comentario = $("#mensaje").val();
+
+if(campo_nombre.length<=5){alert('Escriba nombre competo');return 0;}
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+if(!emailReg.test($.trim($('#email').val()))) {
+alert('Disculpa tu Email es Incorrecto');
+$('#email').focus();
+return 0;
+}
+
+$('#contacteme').html('<p class="msg text-center">Enviando Mensaje.Por Favor Espere.</p>');
+						
+$.post("view/paginaweb/enviar_email.php",{nombre:campo_nombre,email:campo_email,asunto:campo_asunto,comentario:campo_comentario},function(data){
+alert(data);
+if(data==''){
+	$('#contacteme').slideUp("fast", function() {				   
+	$(this).before('<p class="msg text-center"><strong>Gracias!</strong> Tu email a sido enviado correctamente.</p>');
+	});
+
+	}
+	else{
+	$('#contacteme').slideUp("fast", function() {				   
+	$(this).before('<p class="msg text">Disculpe Pero Hubo Algunos Problemas al Enviar su Mensaje.<strong>Gracias!</strong></p>');
+	});
+	}
+
+});
+
+}
+
+});
+
+
+});
+</script>
+<div class="col-xs-12 col-sm-12 col-md-12">
+		<div class="text-center" style="color: #777777;">
+			<h3 class="titulo text-center">CONT&Aacute;CTENOS</h3>
+				<span class="alex"></span><br/>
+			<p class="text-center">
+			Por favor utilice el formulario de contacto para enviar informaci&oacute;n veridica.<br/>
+			Para enviar un mensaje se requiere que Ud. ingrese su nombre y su correo e-mail corectamente.Gracias</p>
+		</div>			
+</div>
+
+<div id="contacteme">
+<form name="frm_email" id="frm_email" method="POST" action="#">
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-6">
+		<form method="post" name="contac">
+		<div><input type="text" name="nombre" id="nombre" class="cajatexto com_user ui-widget-content" placeholder="Nombre y Apellidos"></div>
+		<span class="space">&nbsp;</span>
+		<div><input type="text" name="email" id="email" class="cajatexto com_email ui-widget-content" placeholder="Email"></div>
+		<span class="space">&nbsp;</span>
+		<div><input type="text" name="asunto" id="asunto" class="cajatexto com_asunto ui-widget-content" placeholder="Asunto"></div>
+		<span class="space">&nbsp;</span>
+	    <textarea id="mensaje" class="textarea com_comentario ui-widget-content" placeholder="Mensaje" ></textarea>
+		<div class="form-submit1">
+			    <input name="enviar_msg" class="btn btn-primary btn-lg"  type="button" id="enviar_msg" value="Enviar Mensaje">
+		</div>  
+		</form>
+	</div>
+	 <div class="col-xs-12 col-sm-6 col-md-6">
+		<span style="color: #E24E35;font-weight: 600;font-size: 1em;margin: 0;text-transform: uppercase;">Puedes Contactarnos a los siguientes datos:</span><br/>
+		<span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; Jr. Serafín Filomeno  N° 296 - Moyobamba -  Per&uacute;<br/>
+		<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; Telefax 042-509751 RPM *659405 942839302<br/>
+		<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;siscomp@hotmail.com<br/><br/>
+		&oacute; Escribenos un E-mail, estaremos  dispuestos a resolver tus dudas y ponerse en contacto contigo.
+		<br/><br/>
+	 </div>
+	
+</div>
+
+<div class="row" style="padding-top:35px">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+		<SPAN style="color:red"> Jr. Serafín Filomeno  N° 296 - Moyobamba -  Per&uacute; </span><BR/>
+		<iframe src="https://www.google.com/maps/d/embed?mid=zyHjmdjcosHo.kT8i_aLjZ2pQ" width="100%" height="500"></iframe>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 text-center">	
+			Gracias por su Preferencia...!
+    </div>
+</div>
+</form>
+</div>
+<hr/>
+    
+
+
+
+	

@@ -1,0 +1,20 @@
+<style>
+form, .subscribe:hover>div {
+    display: none;
+}
+
+.subscribe:hover>form {
+    display: block;
+}
+</style>
+<div class="subscribe">
+    <div>Subscribe to this website</div>
+    <form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=alexcican', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" >
+        <p>
+            <input type="text" class="email_field" name="email" size="18" value="E-mail address" />
+            <input type="hidden" value="alexcican" name="uri" />
+            <input type="hidden" name="loc" value="en_US" />
+            <input class="email_btn" name="submit" type="submit" value="Done" />
+        </p>
+    </form>
+</div>

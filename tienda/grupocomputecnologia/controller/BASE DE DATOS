@@ -1,0 +1,3 @@
+ 
+ CREATE VIEW v_componentes_fuentepoder  AS  
+SELECT p.idproducto AS id,m.descripcion AS marca,p.descripcion AS producto,i.precio_v AS precio,t.idtipo AS tipo,p.informacion AS informacion,i.precio_c AS precio_c,i.stock AS stock from (((producto p join marca m on((m.idmarca = p.idmarca))) join tipo t on((m.idmarca = p.idmarca))) join inventario i on((p.idproducto = i.idproducto))) where ((p.idmarca = m.idmarca) and (t.idtipo = p.idtipo) and (p.estado = 1) and (t.idtipo = 27)) ;

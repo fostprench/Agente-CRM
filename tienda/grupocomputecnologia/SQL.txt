@@ -1,0 +1,4 @@
+INSERT INTO `modulo` (`idmodulo`, `descripcion`, `url`, `submodulo`, `estado`, `orden`, `icono`) VALUES ('49', 'Listo S/C', 'controller=Sincomp', '3', '1', '9', '');
+
+CREATE VIEW v_sincomp  AS  
+select v.idventa AS Id,c.nombres AS Cliente,v.nro_comprobante AS Nro_Com,v.fecha AS Fecha_Venta,v.total AS Total,v.tipo_venta AS amort from (venta v join cliente c) where ((v.idcliente = c.idcliente) and (v.estado > 0) and (v.idcomprobante = 3)) order by v.fecha desc ;

@@ -1,0 +1,1 @@
+<?php echo 'Usted no tiene permisos para acceder directamente';?>
